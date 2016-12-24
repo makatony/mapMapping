@@ -1,0 +1,12 @@
+
+    [out:json][timeout:25];
+    // gather results
+    (
+    node["amenity"~"toilets"](45.5,5.5,47.5,10.5);
+    way["amenity"~"toilets"](45.5,5.5,47.5,10.5);
+    relation["amenity"~"toilets"](45.5,5.5,47.5,10.5);
+            );
+            // print results
+            out body;
+            >;
+            out skel qt;

@@ -2,7 +2,7 @@ import subprocess
 import os
 import sys
 import json
-from shapely import geometry as g
+#from shapely import geometry as g
 
 #from tqdm import tqdm
 
@@ -50,7 +50,7 @@ def find_POIs(lon, lat, dlon, dlat, poi_type="amenity", poi_type2="bench", verbo
             props = feat["properties"]
             if "unisex" not in props or props["unisex"]=="no":
                 continue
-            print props["unisex"]
+            #print props["unisex"]
             if "access" in props:
                 access = props["access"]
             else:
